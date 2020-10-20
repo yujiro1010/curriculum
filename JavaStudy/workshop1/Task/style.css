@@ -1,0 +1,214 @@
+@charset "utf-8";
+/*--------------------------------------------------------------
+RESET
+--------------------------------------------------------------*/
+html{color:#808080;background:#fff}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-size:inherit;font-weight:inherit;}
+legend{color:#000}
+*{zoom: 1;}
+img{vertical-align: bottom;}
+:focus{outline:none;}
+/*--------------------------------------------------------------
+PARTS
+--------------------------------------------------------------*/
+/*clearfix*/
+.cf{
+    display: block;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*width*/
+.w__base{
+    width: 1040px;
+    margin: 0 auto;
+}
+/*title*/
+.base__title{
+    font-size: 32px;
+}
+.base__title span{
+    display: block;
+    margin-bottom: 13px;
+    font-size: 16px;
+    letter-spacing: .2rem;
+}
+
+クラス名{
+    float:left;
+    float: right;
+}
+/*--------------------------------------------------------------
+    HEADER
+--------------------------------------------------------------*/
+header{
+    padding: 26px 0 24px;
+}
+.gnav{
+    font-size: 0;
+}
+.gnav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.gnav li a{
+    display: block;
+    padding: 17px 0;
+    font-size: 14px;
+    color: #74859f;
+    letter-spacing: 0.2rem;
+}
+/*--------------------------------------------------------------
+ABOUT
+--------------------------------------------------------------*/
+.about{
+    padding: 100px 0 120px;
+}
+.about__inner{
+    width: 1040px;
+    margin: 0 auto;
+}
+.about__inner .base__title{
+    margin-bottom: 31px;
+}
+.about__inner .txt{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.about__3column{
+    margin-top: 36px;
+    font-size: 0;
+}
+.about__3column li{
+    display: inline-block;
+    width: 320px;
+    height: 337px;
+    border-bottom: solid 1px #74859f;
+}
+.about__item__title{
+    margin: 25px 0 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.about__item__txt{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.about__3column li + li{
+    margin-left: 40px;
+}
+/*--------------------------------------------------------------
+MENU
+--------------------------------------------------------------*/
+.menu{
+    background-color: #e8edf3;
+    padding: 100px 30px 120px 30px;
+}
+.menu__cts{
+    margin-top: 40px;
+}
+.menu__cts__left{
+    width: 490px;
+    float: left;
+}
+.menu__cts__right{
+    width: 490px;
+    float: right;
+}
+.menu__box h3{
+    background-color: #74859f;
+    padding: 21px 18px;
+    font-size: 16px;
+    color: #fff;
+}
+.menu__box li{
+    padding: 18px;
+    font-size: 14px;
+    border-bottom: solid 1px #74859f;
+}
+.menu__box .price{
+    float: right;
+}
+.menu__cts .menu__box + .menu__box{
+    margin-top: 44px;
+}
+/*--------------------------------------------------------------
+ACCESS
+--------------------------------------------------------------*/
+.access{
+    padding: 100px 0 145px;
+}
+.access__box{
+    margin-top: 40px;
+}
+.access__map{
+    width: 680px;
+}
+.access__address{
+    width: 340px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.access__map iframe{
+    width: 100%;
+    height: 425px;
+    border: none;/*frameborderを消したことでborderがついてるため*/
+}
+.access__address h3{
+    margin-bottom: 23px;
+    padding: 17px 0 18px;
+    font-size: 20px;
+    border-bottom: solid 3px #74859f;
+}
+.access__address__box,
+.access__staff__message{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.access__address__box .sup{
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eee;
+}
+.access__address .site__link{
+    font-size: 0;
+    margin-top: 25px;
+}
+.access__address .site__link li{
+    display: inline-block;
+}
+.access__address .site__link li + li{
+    margin-left: 20px;
+}
+.access__address .site__link a{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #74859f;
+    border-radius: 40px;
+}
+.access__address .site__link img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 38px;
+}
+
+
