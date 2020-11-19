@@ -1,0 +1,17 @@
+#wrapper{/*共通の処理*/  
+    width:700px;    
+}
+
+.header{
+    border: solid 1px #999;
+    background-color:yellow;
+}
+.main{
+    height:200px;
+    border: solid 10px #999;
+    background-color: skyblue;
+}
+.footer{
+    border: solid 1px;
+    background-color:pink;
+}
