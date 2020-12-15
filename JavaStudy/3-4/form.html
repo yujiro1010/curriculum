@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/webapp/testservlet" method="post">
+        お名前：
+        <input type="text" name="name" size="30" maxlength="20"><br>
+        パスワード：
+        <input type="password" name="pass" size="10" maxlength="10"><br><br>
+        備考：
+        <textarea>
+        </textarea><br>
+        言語を選択：
+        <input type="checkbox" name="language" value="html" checked="checked">HTML
+        <input type="checkbox" name="language" value="css" checked="checked">CSS
+        <input type="checkbox" name="language" value="php">PHP
+        <input type="checkbox" name="language" value="java">Java<br>
+        性別：
+        <input type="radio" name="sex" value="m">MAN
+        <input type="radio" name="sex" value="w">WOMEN
+        <input type="radio" name="sex" value="o">OTHER<br>
+        <br>
+        ファイルをアップしてください：
+        <input type="file" name="fileup" value="1">
+        <br>
+        <input type="button" value="button1" onClick="alert('ボタン1がクリックされました。');"><br>
+        <input type="image" src="./img/search/btn.gih" alt="検索ボタン"><br>
+        <input type="reset" value="リセットreset">
+        
+    </form>
+    
+</body>
+</html>
