@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 .wrapper{
  margin: 0 auto;
@@ -11,10 +11,10 @@
  text-align: center;
  /* 問① 背景を青色にする */
  background-color:#0000FF;
-
  /* 問② 文字の色を白にする */
  color:#FFFFFF;
  /* 問③ 背景に対して文字を縦方向に中央揃え */
+
 }
 
 ul li {

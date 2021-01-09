@@ -67,23 +67,22 @@ public class EmployeeService {
   // preparedStatementに実行したいSQLを格納
  preparedStatement = connection.prepareStatement(SQL_UPDATE);
   // 問④ preparedStatementを使って、一番目のindexに今の時間をセットしてください。2番目のindexにIDをセットしてください。
- 	for (int i = 0; i < 3; i++) {
-	 preparedStatement.setString(1,login_time);
-	 preparedStatement.setString(2, id);
+ preparedStatement.setString(1,login_time);
+ preparedStatement.setString(2,id);
   // 問⑤ UPDATEを実行する文を記述
-	 preparedStatement.executeUpdate();}
+ preparedStatement.executeUpdate();
+
  /*
  * UPDATEが成功したものを即座に表示
  * 任意のユーザーを検索できるように、プリペアドステートメントを記述。
  */
  preparedStatement = connection.prepareStatement(SQL_SELECT);
   //問⑥ 一番目のindexにIDをセットしてください。2番目のindexにPASSWORDをセット。
- 	for (int k = 0; k < 3; k++) {
-	 preparedStatement.setString(1,id);
-	 preparedStatement.setString(2, password);
+ preparedStatement.setString(1,id);
+ preparedStatement.setString(2,password);
   // SQLを実行。実行した結果をresultSetに格納。
  resultSet = preparedStatement.executeQuery();
- 	}
+
  while (resultSet.next()) {
   // 問⑦ tmpName,tmpComment,tmpLoginTimeに適当な値を入れてください。
  String tmpName = resultSet.getString("name");
@@ -98,7 +97,7 @@ public class EmployeeService {
  }
 
   // forName()で例外発生
-  } catch (ClassNotFoundException e) {
+ } catch (ClassNotFoundException e) {
  e.printStackTrace();
 
   // getConnection()、createStatement()、executeQuery()で例外発生

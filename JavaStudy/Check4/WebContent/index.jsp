@@ -32,6 +32,7 @@
  <td><%=employeeBean.getLogin_Time()%></td>
  </tr>
  </table>
+
  <!-- 問② それ以外の表示（エラーの場合）-->
  <% } else { %>
  【IDもしくはパスワードが間違ってます】
