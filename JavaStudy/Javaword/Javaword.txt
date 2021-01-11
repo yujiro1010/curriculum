@@ -512,3 +512,9 @@ A successful Git branching model{
     プログラム内部から、デバッグ情報やエラー情報などのログデータを、
     コンソール、ファイル、その他ログサーバなどヘ出力する機能
 }
+
+dogetとdopostの違い{
+・htmlのBodyタグに含めてサーブレットへ投げる場合：POST
+・htmlのURLに含めてサーブレットを投げる場合：GET
+簡単にリンクへ飛ぶときはdoGETでそのほかはdoPOST
+}
