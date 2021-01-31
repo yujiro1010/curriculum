@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import com.example.security.springsecurity.account.AccountService;
 
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+public class WebSecurityConflg extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private AccountService userService;
