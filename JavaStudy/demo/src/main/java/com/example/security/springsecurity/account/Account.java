@@ -60,7 +60,7 @@ public class Account implements UserDetails {
     @Column(nullable = false)
     private Set<Authority> authorities;
 
-    // JPA requirement
+    // JPA requirement (要件）
     protected Account() {}
 
     //コンストラクタ
