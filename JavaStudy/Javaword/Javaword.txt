@@ -518,3 +518,6 @@ dogetとdopostの違い{
 ・htmlのURLに含めてサーブレットを投げる場合：GET
 簡単にリンクへ飛ぶときはdoGETでそのほかはdoPOST
 }
+LAMP{データベースを利用したWebアプリケーションを
+開発・運用するのに適した、人気の高いオープンソースソフトウェアの組み合わせの一つ
+Linux,apache,MYSQL,perl.python,PHPの頭字語}
