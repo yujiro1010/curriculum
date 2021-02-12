@@ -1,4 +1,4 @@
-function myfunc(){
-    let change = document.getElementById("target");
-    change.textContent = "こんにちは";
-}
+function changeColor(){
+    let obj = document.getElementById('box');
+    obj.style.backgroundColor = 'red';//背景色を赤にする
+  }
