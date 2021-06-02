@@ -10,6 +10,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1609850507427"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_Xg5W0k9TEeumT9osbHn8UQ" selectedElement="_Xg594E9TEeumT9osbHn8UQ" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_Xg594E9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_Xv2Y0E9TEeumT9osbHn8UQ">
         <children xsi:type="advanced:Perspective" xmi:id="_Xv2Y0E9TEeumT9osbHn8UQ" elementId="jp.sourceforge.mergedoc.PleiadesJavaPerspective" selectedElement="_Xv2Y0U9TEeumT9osbHn8UQ" label="Java" iconURI="platform:/plugin/jp.sourceforge.mergedoc.PleiadesJavaPerspective/icons/jperspective.png">
@@ -62,6 +63,7 @@
           <tags>persp.perspSC:org.eclipse.jdt.ui.JavaBrowsingPerspective</tags>
           <tags>persp.perspSC:org.eclipse.debug.ui.DebugPerspective</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
+          <tags>persp.actionSet:com_sysdeo_eclipse_tomcat_actionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_Xv2Y0U9TEeumT9osbHn8UQ" selectedElement="_Xv2Y0k9TEeumT9osbHn8UQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_Xv2Y0k9TEeumT9osbHn8UQ" containerData="5000" selectedElement="_Xv2Y009TEeumT9osbHn8UQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Xv2Y009TEeumT9osbHn8UQ" containerData="6000" selectedElement="_Xv2Y1E9TEeumT9osbHn8UQ" horizontal="true">
@@ -311,7 +313,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XjdioE9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PNWI8KssEeu-nv8yPrb2CQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_XD4rJU9TEeumT9osbHn8UQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JgfiUL9NEeunZpBcfhD_Og" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_XD4rJU9TEeumT9osbHn8UQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XjdioU9TEeumT9osbHn8UQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -323,6 +325,9 @@
       <children xsi:type="menu:ToolBar" xmi:id="_XjdipE9TEeumT9osbHn8UQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_XjdipU9TEeumT9osbHn8UQ" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_JzOREL9NEeunZpBcfhD_Og" elementId="com_sysdeo_eclipse_tomcat_actionSet">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XxtaAE9TEeumT9osbHn8UQ" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
@@ -339,7 +344,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XjeJsE9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PNZMQKssEeu-nv8yPrb2CQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" enabled="false" type="Check" command="_XD4qwk9TEeumT9osbHn8UQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Jgka2L9NEeunZpBcfhD_Og" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" enabled="false" type="Check" command="_XD4qwk9TEeumT9osbHn8UQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XjeJsU9TEeumT9osbHn8UQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -726,6 +731,7 @@
     <bindings xmi:id="_XEqG109TEeumT9osbHn8UQ" keySequence="ALT+SHIFT+D Q" command="_XD21j09TEeumT9osbHn8UQ"/>
     <bindings xmi:id="_HC-Cg6aMEeuDTtYCriooDg" keySequence="CTRL+SHIFT+K" command="_XD0ZaE9TEeumT9osbHn8UQ"/>
     <bindings xmi:id="_HDHzgKaMEeuDTtYCriooDg" keySequence="CTRL+K" command="_XD4D2k9TEeumT9osbHn8UQ"/>
+    <bindings xmi:id="_I5U0oL9NEeunZpBcfhD_Og" keySequence="ALT+T" command="_I4aOo79NEeunZpBcfhD_Og"/>
   </bindingTables>
   <bindingTables xmi:id="_XEeglU9TEeumT9osbHn8UQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" bindingContext="_XD9jYk9TEeumT9osbHn8UQ">
     <bindings xmi:id="_XEeglk9TEeumT9osbHn8UQ" keySequence="CTRL+CR" command="_XD1ndU9TEeumT9osbHn8UQ"/>
@@ -1065,6 +1071,7 @@
     <bindings xmi:id="_HDHzgqaMEeuDTtYCriooDg" keySequence="ALT+SHIFT+R" command="_XDzyN09TEeumT9osbHn8UQ"/>
     <bindings xmi:id="_HDHzg6aMEeuDTtYCriooDg" keySequence="ALT+SHIFT+V" command="_XDzLQ09TEeumT9osbHn8UQ"/>
   </bindingTables>
+  <bindingTables xmi:id="_Janj0b9NEeunZpBcfhD_Og" bindingContext="_Janj0L9NEeunZpBcfhD_Og"/>
   <rootContext xmi:id="_XC-rxE9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="&#x30c0;&#x30a4;&#x30a2;&#x30ed;&#x30b0;&#x307e;&#x305f;&#x306f;&#x30a6;&#x30a3;&#x30f3;&#x30c9;&#x30a6;" description="&#x30c0;&#x30a4;&#x30a2;&#x30ed;&#x30b0;&#x304b;&#x30a6;&#x30a3;&#x30f3;&#x30c9;&#x30a6;&#x304c;&#x958b;&#x3044;&#x3066;&#x3044;&#x307e;&#x3059;">
     <children xmi:id="_XC-rxU9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="&#x30a6;&#x30a3;&#x30f3;&#x30c9;&#x30a6;" description="&#x30a6;&#x30a3;&#x30f3;&#x30c9;&#x30a6;&#x304c;&#x958b;&#x3044;&#x3066;&#x307e;&#x3059;">
       <children xmi:id="_XC-rxk9TEeumT9osbHn8UQ" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -1198,6 +1205,7 @@
   <rootContext xmi:id="_XqO5Bk9TEeumT9osbHn8UQ" elementId="org.eclipse.wst.ws.explorer.explorer" name="Auto::org.eclipse.wst.ws.explorer.explorer"/>
   <rootContext xmi:id="_XqO5CE9TEeumT9osbHn8UQ" elementId="org.sf.feeling.decompiler.decompilerActionSet" name="Auto::org.sf.feeling.decompiler.decompilerActionSet"/>
   <rootContext xmi:id="_XqO5Ck9TEeumT9osbHn8UQ" elementId="org.springsource.ide.eclipse.commons.launch.actionSet" name="Auto::org.springsource.ide.eclipse.commons.launch.actionSet"/>
+  <rootContext xmi:id="_Janj0L9NEeunZpBcfhD_Og" elementId="com_sysdeo_eclipse_tomcat_actionSet" name="Auto::com_sysdeo_eclipse_tomcat_actionSet"/>
   <descriptors xmi:id="_XH8EQE9TEeumT9osbHn8UQ" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
     <tags>removeOnHide</tags>
@@ -3240,6 +3248,11 @@
   <commands xmi:id="_HCYMtKaMEeuDTtYCriooDg" elementId="com.genuitec.eclipse.webclipse.evergreen.checkForUpdates" commandName="&#x66f4;&#x65b0;&#x306e;&#x78ba;&#x8a8d;" category="_XDvg3U9TEeumT9osbHn8UQ"/>
   <commands xmi:id="_HCYMtaaMEeuDTtYCriooDg" elementId="com.genuitec.eclipse.inlinesearch.replace.toggle.close" commandName="Close Replace Bar" category="_HCYMoqaMEeuDTtYCriooDg"/>
   <commands xmi:id="_HI5rYKaMEeuDTtYCriooDg" elementId="com.genuitec.myeclipse.help.darktheme.commandid" commandName="com.genuitec.myeclipse.help.darktheme.commandid"/>
+  <commands xmi:id="_I4aOor9NEeunZpBcfhD_Og" elementId="pl.szpinda.plugin.tomcat.commands.tomcatStartStop" commandName="Tomcat &#x958b;&#x59cb;&#x3001;&#x505c;&#x6b62;" category="_I4aOob9NEeunZpBcfhD_Og"/>
+  <commands xmi:id="_I4aOo79NEeunZpBcfhD_Og" elementId="pl.szpinda.plugin.tomcat.commands.tomcatQuickRestart" commandName="Tomcat &#x30af;&#x30a4;&#x30c3;&#x30af;&#x518d;&#x8d77;&#x52d5;" category="_I4aOob9NEeunZpBcfhD_Og"/>
+  <commands xmi:id="_JZs90L9NEeunZpBcfhD_Og" elementId="AUTOGEN:::com_sysdeo_eclipse_tomcat_actionSet/com.sysdeo.eclipse.tomcat.restart" commandName="Tomcat &#x518d;&#x8d77;&#x52d5;" description="Tomcat &#x518d;&#x8d77;&#x52d5;(&amp;R)" category="_XDvg3U9TEeumT9osbHn8UQ"/>
+  <commands xmi:id="_JZs90b9NEeunZpBcfhD_Og" elementId="AUTOGEN:::com_sysdeo_eclipse_tomcat_actionSet/com.sysdeo.eclipse.tomcat.stop" commandName="Tomcat &#x505c;&#x6b62;" description="Tomcat &#x505c;&#x6b62;(&amp;T)" category="_XDvg3U9TEeumT9osbHn8UQ"/>
+  <commands xmi:id="_JZs90r9NEeunZpBcfhD_Og" elementId="AUTOGEN:::com_sysdeo_eclipse_tomcat_actionSet/com.sysdeo.eclipse.tomcat.start" commandName="Tomcat &#x8d77;&#x52d5;" description="Tomcat &#x8d77;&#x52d5;(&amp;S)" category="_XDvg3U9TEeumT9osbHn8UQ"/>
   <addons xmi:id="_XC-ryE9TEeumT9osbHn8UQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_XC-ryU9TEeumT9osbHn8UQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_XC-ryk9TEeumT9osbHn8UQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3251,7 +3264,7 @@
   <addons xmi:id="_XC-r0E9TEeumT9osbHn8UQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_XC-r0U9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_XDOjYE9TEeumT9osbHn8UQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_O7nfwassEeu-nv8yPrb2CQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_XDvgwE9TEeumT9osbHn8UQ" elementId="org.springframework.tooling.ls.eclipse.gotosymbol.commands.category" name="STS4"/>
   <categories xmi:id="_XDvgwU9TEeumT9osbHn8UQ" elementId="org.eclipse.ui.category.edit" name="&#x7de8;&#x96c6;"/>
@@ -3319,4 +3332,5 @@
   <categories xmi:id="_XDwH8U9TEeumT9osbHn8UQ" elementId="org.thymeleaf.extras.eclipse.menus.actions" name="Thymeleaf" description="Thymeleaf main menu category"/>
   <categories xmi:id="_HCYMoaaMEeuDTtYCriooDg" elementId="AnsiConsole.command.categoryid" name="Ansi Console Commands"/>
   <categories xmi:id="_HCYMoqaMEeuDTtYCriooDg" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="&#x30a4;&#x30f3;&#x30e9;&#x30a4;&#x30f3;&#x691c;&#x7d22;"/>
+  <categories xmi:id="_I4aOob9NEeunZpBcfhD_Og" elementId="pl.szpinda.plugin.tomcat.commands.category.key" name="Tomcat keys"/>
 </application:Application>

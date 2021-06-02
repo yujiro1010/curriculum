@@ -13,3 +13,4 @@ let car ={
 }
 console.log('ガソリンは'+car.gass+"です");
 console.log('ナンバーは'+car.num+'です');
+console.log(window);
