@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" rel="stylesheet"></link>
+	<script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+    <title>SignUp</title>
+</head>
+<body>
+ 	<div class="col-sm-5">
+ 		<div class="page-header">
+ 			<h1>ユーザー登録画面</h1>
+ 		</div>
+ 		<!-- Springセキュリティを使う場合はth:action属性を使うようにする。 -->
+ 		<!-- th:objectはModelに登録されているオブジェクトを受け取れる。受け取りたいクラスのキーを指定。 -->
+ 		<form method="post" th:action="@{/signup}" th:object="${signupForm}">
+ 			<table class="table table-bordered table-hover">
+ 				<tr>
+ 					<th class="active col-sm-3">ユーザーID</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<!-- th:fieldはオブジェクトの中のフィールド変数を取得できる。同時にコントローラクラスに値を渡せる。 -->
+ 							<!-- 「th:field="${ModelAttributeのキー名, フィールド名}"」が書き方だがth:objectを使っていれば -->
+ 							<!-- 以下のようにオブジェクト名を省略できる。また$ではなく*になる。 -->
+ 							<input type="text" class="form-control" th:field="*{userId}" />
+ 						</div>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="active">パスワード</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<input type="text" class="form-control" th:field="*{password}" />
+ 						</div>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="active">ユーザー名</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<input type="text" class="form-control" th:field="*{userName}" />
+ 						</div>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="active">誕生日</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<input type="text" class="form-control" placeholder="yyyy/MM/dd" th:field="*{birthday}"/>
+ 						</div>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="active">年齢</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<input type="text" class="form-control" th:field="*{age}"/>
+ 						</div>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="active">結婚</th>
+ 					<td>
+ 						<div class="form-group">
+ 							<!-- th:each："変数名：${ModelAttributeのキー名}"と指定することでModelに登録されている値が繰り返し呼び出される。 -->
+ 							<div th:each="item:${radioMarriage}">
+ 								<!-- th:text：画面に表示される文字列を指定する。この場合keyの値（既婚・未婚）を画面の表示する。-->
+ 								<!--th:value：画面からControllerクラスに送る値を指定する。この場合Mapクラスのvalue(true,false)を送る。 -->
+ 								<input type="radio" name="radioMarriage" th:text="${item.key}" th:value="${item.value}" th:field="*{marriage}"/>
+ 							</div>
+ 						</div>
+ 					</td>
+ 				</tr>
+ 			</table>
+ 			<ul>
+ 				<li th:each="error:${#fields.detailedErrors()}">
+ 					<span th:text="${error.message}">Error message</span>
+ 				</li>
+ 			</ul>
+ 			<button class="btn btn-primary" type="submit">ユーザー登録</button>
+ 		</form>
+ 	</div>
+</body>
+</html>

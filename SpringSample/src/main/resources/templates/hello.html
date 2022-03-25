@@ -8,12 +8,18 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <form method="post" action="/hello">
+    <form method="post" action="/hello/response">
     	<!-- th:value属性は画面からcontrollerクラスへ値を渡せる -->
     	<!-- th:とつく属性はタイムリーフの属性。 -->
     	好きな文字を入力：
     	<input type="text" name="text1" th:value="${text1_value}" />
     	<input type="submit" value="クリック"/>
+    </form>
+    <br>
+    <form method="post" action="hello/db">
+    	従業員IDを入力：
+    	<input type="text" name="text2" th:value="${text2_value}">
+    	<input type="submit" value="クリック">
     </form>
 </body>
 </html>

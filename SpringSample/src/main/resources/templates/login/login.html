@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 通常cssやjsファイルはsrc/main/resources配下にあるファイルを読み込むが、webjarsを使うとDLしたライブラリ内の
+	ファイルをあたかもresources配下においてあるように読み込むことができる。
+	タイムリーフでresources配下のファイルを読み込むには下記のth:hrefやth:srcの属性を使う。 -->
+    <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" rel="stylesheet"></link>
+    <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+
+    <title>Login</title>
+</head>
+<body class="text-center">
+	<h1>Login</h1>
+	<form method="post" action="/login">
+		<label>ユーザーID</label>
+		<input type="text" /><br/>
+		<br/>
+		<label>パスワード</label>
+		<input type="password" /><br/>
+		<br/>
+		<button class="btn btn-primary" type="submit">ログイン</button>
+	</form>
+	<br/>
+	<!-- ユーザー登録画面へのリンク -->
+	<!-- タイムリーフを使ってアンカータグを使う場合th:hrefを使う。コントローラークラスの@GetMappingのカッコ内の文字列を指定する。 -->
+	<a th:href="@{'/signup'}">ユーザー新規登録はこちら</a>
+</body>
+</html>

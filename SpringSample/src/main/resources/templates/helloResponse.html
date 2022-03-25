@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,9 @@
     <title>ResponseSample</title>
 </head>
 <body>
-    
+    <h1>HelloResponse</h1>
+    <!-- th:text属性にmodel.addattributeで登録したキーを指定することでコントローラークラスから
+    値を受け取れる。 -->
+    <p th:text="${sample}"></p>
 </body>
 </html>
