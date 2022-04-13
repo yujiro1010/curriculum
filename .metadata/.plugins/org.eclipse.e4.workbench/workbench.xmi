@@ -64,8 +64,8 @@
           <tags>persp.perspSC:org.eclipse.debug.ui.DebugPerspective</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.actionSet:com_sysdeo_eclipse_tomcat_actionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_v7BZZaf-Eey6mc-exMBvGA" selectedElement="_v7BZfKf-Eey6mc-exMBvGA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_v7BZZqf-Eey6mc-exMBvGA" containerData="3354" selectedElement="_v7BZZ6f-Eey6mc-exMBvGA">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_v7BZZaf-Eey6mc-exMBvGA" selectedElement="_v7BZZqf-Eey6mc-exMBvGA" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_v7BZZqf-Eey6mc-exMBvGA" containerData="3354" selectedElement="_v7BZcqf-Eey6mc-exMBvGA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_v7BZZ6f-Eey6mc-exMBvGA" containerData="6000" selectedElement="_v7BZaKf-Eey6mc-exMBvGA" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_v7BZaKf-Eey6mc-exMBvGA" elementId="explorer" containerData="5000" selectedElement="_v7BZaaf-Eey6mc-exMBvGA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_v7BZaaf-Eey6mc-exMBvGA" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_v7BcHaf-Eey6mc-exMBvGA" closeable="true">
@@ -183,7 +183,7 @@
       <tags>categoryTag:&#x30d8;&#x30eb;&#x30d7;</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_v7Bb36f-Eey6mc-exMBvGA" elementId="org.eclipse.ui.editorss" selectedElement="_v7Bb4Kf-Eey6mc-exMBvGA">
-      <children xsi:type="basic:PartStack" xmi:id="_v7Bb4Kf-Eey6mc-exMBvGA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_v7Bb_af-Eey6mc-exMBvGA">
+      <children xsi:type="basic:PartStack" xmi:id="_v7Bb4Kf-Eey6mc-exMBvGA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_v7BcA6f-Eey6mc-exMBvGA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -200,18 +200,18 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_v7Bb_af-Eey6mc-exMBvGA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="login.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; partName=&quot;login.html&quot; title=&quot;login.html&quot; tooltip=&quot;SpringSample/src/main/resources/templates/login/login.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SpringSample/src/main/resources/templates/login/login.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1108&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; partName=&quot;login.html&quot; title=&quot;login.html&quot; tooltip=&quot;SpringSample/src/main/resources/templates/login/login.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SpringSample/src/main/resources/templates/login/login.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;755&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_v7BcA6f-Eey6mc-exMBvGA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="signup.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;signup.html&quot; partName=&quot;signup.html&quot; title=&quot;signup.html&quot; tooltip=&quot;SpringSample/src/main/resources/templates/login/signup.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SpringSample/src/main/resources/templates/login/signup.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2912&quot; selectionTopPixel=&quot;268&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_v7BcA6f-Eey6mc-exMBvGA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="signup.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;signup.html&quot; partName=&quot;signup.html&quot; title=&quot;signup.html&quot; tooltip=&quot;SpringSample/src/main/resources/templates/login/signup.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SpringSample/src/main/resources/templates/login/signup.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;718&quot; selectionTopPixel=&quot;90&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_aOf18KjXEeyDBL__1vemqg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SignupForm.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SignupForm.java&quot; partName=&quot;SignupForm.java&quot; title=&quot;SignupForm.java&quot; tooltip=&quot;SpringSample/src/main/java/com/example/demo/login/domain/model/SignupForm.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SpringSample/src/main/java/com/example/demo/login/domain/model/SignupForm.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1072&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -378,7 +378,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_v7Bcl6f-Eey6mc-exMBvGA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CyMtR6w9EeygW9w00ppn1w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_v7LTFKf-Eey6mc-exMBvGA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vWa4obAvEeyYdZWJQkCWrA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="&#x5370;&#x5237;" command="_v7LTFKf-Eey6mc-exMBvGA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_v7BcpKf-Eey6mc-exMBvGA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -412,7 +412,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_v7Bc-6f-Eey6mc-exMBvGA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_CyMtVKw9EeygW9w00ppn1w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" type="Check" command="_v7LSsaf-Eey6mc-exMBvGA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_vWa4rrAvEeyYdZWJQkCWrA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="&#x30a8;&#x30c7;&#x30a3;&#x30bf;&#x30fc;&#x306e;&#x30d4;&#x30f3;&#x7559;&#x3081;" enabled="false" type="Check" command="_v7LSsaf-Eey6mc-exMBvGA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_v7BdBqf-Eey6mc-exMBvGA" elementId="org.eclipse.jst.pagedesigner.PageDesignerEditor" visible="false">
         <tags>Draggable</tags>

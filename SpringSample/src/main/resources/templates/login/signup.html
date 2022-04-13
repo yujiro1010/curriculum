@@ -21,43 +21,52 @@
  				<tr>
  					<th class="active col-sm-3">ユーザーID</th>
  					<td>
- 						<div class="form-group">
+ 						<!-- エラー時のみ「has-error」(Bootstrapのclass)classのcssを追加
+ 						また${#fields.hasErrors('userId')}?'has-error'でtrueかfalseか判定。trueの場合class追加-->
+ 						<div class="form-group" th:classappend="${#fields.hasErrors('userId')}?'has-error'">
  							<!-- th:fieldはオブジェクトの中のフィールド変数を取得できる。同時にコントローラクラスに値を渡せる。 -->
  							<!-- 「th:field="${ModelAttributeのキー名, フィールド名}"」が書き方だがth:objectを使っていれば -->
  							<!-- 以下のようにオブジェクト名を省略できる。また$ではなく*になる。 -->
  							<input type="text" class="form-control" th:field="*{userId}" />
+ 							<!-- 個別エラーメッセージ表示させる場合th:ifを使用。th:ifに条件式を設定。trueの場合にそのタグが表示される。
+ 							th:errors属性で各フィールドのエラーメッセージが表示される。-->
+ 							<span class="text-danger" th:if="${#fields.hasErrors('userId')}"th:errors="*{userId}">userId error</span>
  						</div>
  					</td>
  				</tr>
  				<tr>
  					<th class="active">パスワード</th>
  					<td>
- 						<div class="form-group">
+ 						<div class="form-group" th:classappend="${#fields.hasErrors('password')}?'has-error'">
  							<input type="text" class="form-control" th:field="*{password}" />
+ 							<span class="text-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">password error</span>
  						</div>
  					</td>
  				</tr>
  				<tr>
  					<th class="active">ユーザー名</th>
  					<td>
- 						<div class="form-group">
+ 						<div class="form-group" th:classappend="${#fields.hasErrors('userName')}?'has-error'">
  							<input type="text" class="form-control" th:field="*{userName}" />
+ 							<span class="text-danger" th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}">userName error</span>
  						</div>
  					</td>
  				</tr>
  				<tr>
  					<th class="active">誕生日</th>
  					<td>
- 						<div class="form-group">
+ 						<div class="form-group" th:classappend="${#fields.hasErrors('birthday')}?'has-error'">
  							<input type="text" class="form-control" placeholder="yyyy/MM/dd" th:field="*{birthday}"/>
+ 							<span class="text-danger" th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}">birthday error</span>
  						</div>
  					</td>
  				</tr>
  				<tr>
  					<th class="active">年齢</th>
  					<td>
- 						<div class="form-group">
+ 						<div class="form-group" th:classappend="${#fields.hasErrors('age')}?'has-error'">
  							<input type="text" class="form-control" th:field="*{age}"/>
+  							<span class="text-danger" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">age error</span>
  						</div>
  					</td>
  				</tr>
@@ -70,6 +79,7 @@
  								<!-- th:text：画面に表示される文字列を指定する。この場合keyの値（既婚・未婚）を画面の表示する。-->
  								<!--th:value：画面からControllerクラスに送る値を指定する。この場合Mapクラスのvalue(true,false)を送る。 -->
  								<input type="radio" name="radioMarriage" th:text="${item.key}" th:value="${item.value}" th:field="*{marriage}"/>
+	  							<span class="text-danger" th:if="${#fields.hasErrors('marriage')}" th:errors="*{marriage}">marriage error</span>
  							</div>
  						</div>
  					</td>
